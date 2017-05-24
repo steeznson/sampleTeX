@@ -1,2 +1,2 @@
 # sampleTeX
-Sample Philosophy of Science Essay using LaTeX
+My CV written in TeX
