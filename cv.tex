@@ -6,61 +6,67 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} 
 \usepackage{titlesec}
+\usepackage{multicol}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt} 
 \pagenumbering{gobble}
 \begin{document}
 
+% header
 \par{\centering{\Huge James \textsc{Stevenson}}\bigskip\par}
 \section{Contact}
 \large\center 
 07515927614\\
-\href{mailto:james.al.stevenson@gmail.com}{james.al.stevenson@gmail.com}
-\section{Profile}
-\large{I take pride in my work and always aim to improve my skills.  
-Sociable, easy to get on with.
-Will pay close attention to set policies and procedures. 
-Enthusiastic, interested in people and products. 
-Able to communicate ideas clearly. 
-Reliable, able to find out the necessary information to excel at any given task.}
-\section{Education}
-\begin{tabular}{rl}	
-\textsc{Jan} 2017 - \textsc{Apr} 2018 & MSc \textsc{Computing} \\
-&\textbf{Edinburgh Napier}\\
-\\
-\textsc{Sep} 2015 - \textsc{Sep} 2016 & MSc \textsc{Philosophy} \\ 
-&\textbf{The University of Edinburgh}\\
-\\
-\textsc{Sep} 2011 - \textsc{Jun} 2015& MA Hons. \textsc{History of Art}-\textsc{Philosophy}\\ 
-&\textbf{The University of Aberdeen}\\ 
-&\small\emph{Upper Second Class Honours}\\
-\\
-\end{tabular}  
-\section{Skills}
-\begin{enumerate}
-\item IDE: Visual Studio, VScode, Eclipse.
-\item Languages: Java, JavaScript, Python, Perl, Bash.
-\item Web Technologies: ASP.NET MVC, LAMP, Django, Bootstrap, MariaDB, PostgreSQL.
-\item Version control: git.
-\item Other skills: customer service, teamwork, professional discretion.
-\end{enumerate}
-\section{Work Experience}
-\setlength\tabcolsep{4pt}\centering
-\begin{tabular}{r|p{11cm}}
-\textsc{Nov 2016 - Jan 2017} & Stockroom Assistant at \textsc{Waterstones}, Edinburgh \\
-& \small{Seasonal work to assist with busiest time of year for retail. Used computer systems to locate stock, send invoices and create dispatch notes. Packaged and sent off deliveries within a tight timeframe.} \\
-\multicolumn{2}{c}{} \\
-\textsc{Aug 2015 - May 2016} & Sales Assistant at \textsc{Scotmid}, Edinburgh \\
-& \small{Busy shop environment. Helped customers with their shopping, served on tills. Managed stock, delivery and displays instore. Handling cash and card transactions. Adhering to licensing regulations and training new staff.} \\
-\multicolumn{2}{c}{} \\
-\textsc{Jan 2015-Aug 2015} & Caterer at \textsc{Smart Cuisine}, Aberdeen \emph{}\\
-& \small{Serving customers, taking orders, organising and setting-up events/venues. Required high-standard of professionalism and customer service at corporate and private events.}\\
-\multicolumn{2}{c}{} \\
-\textsc{Sep 2013 - May 2014} & Caterer at \textsc{Splendid Catering}, Aberdeen \emph{}\\
-& \small{Waiting tables, mixing and serving drinks, setting-up and dismantling equipment at venues for high-profile events.}\\
-\multicolumn{2}{c}{} \\
-\textsc{Aug 2013} & Internship at \textsc{Sotheby's}, Edinburgh \emph{}\\
-& \small{Checking lot numbers and cataloging high value stock items accurately. Updating stock records, filing, photocopying. Tidying up old records, and removing old files. Dealt with initial phone enquiries.}\\
-\end{tabular}
+\href{mailto:james.al.stevenson@gmail.com}{james.al.stevenson@gmail.com}\\
 
+% two columns
+\begin{multicols}{2}
+
+% Profile  
+\section{Profile}
+Recently completed an MSc Computing at Edinbrugh Napier.
+My thesis critically evaluates contemporary Ontology Engineering tools and Description Logics.
+Coursework required a strong grasp of the principles of OOP and modern web development technologies.
+Very familiar with Java.
+Most recently utilised the Visitor pattern to organise scrapped news items.
+Have used JavaSwing and JavaFX to create GUI frontends for sample ticket booking systems.
+
+% Education
+\section{Education}
+\textsc{Jan} 2017 - \textsc{Apr} 2018\\
+MSc \textsc{Computing} \\
+\textbf{Edinburgh Napier}\\~\\
+\textsc{Sep} 2015 - \textsc{Sep} 2016\\
+MSc \textsc{Philosophy} \\ 
+\textbf{The University of Edinburgh}\\~\\
+\textsc{Sep} 2011 - \textsc{Jun} 2015\\
+MA Hons. \textsc{History of Art}-\textsc{Philosophy}\\ 
+\textbf{The University of Aberdeen}\\ 
+\small\emph{Upper Second Class Honours}\\
+
+% Skills
+\section{Skills}
+\large{\textbf{IDE}: Visual Studio, VScode, Eclipse\\
+\textbf{Languages}: Java, JavaScript, Python, Perl, Bash\\
+\textbf{Web Technologies}: ASP.NET MVC, Bootstrap, Django, LAMP, MariaDB\\
+\textbf{Version control}: git\\
+\textbf{Other}: teamwork, customer service, professional discretion\\}
+
+
+% Work Experience
+\section{Work Experience}
+\small{
+\textsc{Nov 2016 - Jan 2017} \textbf{Stockroom Assistant}\\
+at \textsc{Waterstones}, Edinburgh\\
+Seasonal work to assist with busiest time of year for retail. Used computer systems to locate stock, send invoices and create dispatch notes. Packaged and sent off deliveries within a tight timeframe.\\
+\textsc{Aug 2015 - May 2016} \textbf{Sales Assistant}\\
+at \textsc{Scotmid}, Edinburgh\\
+Busy shop environment. Helped customers with their shopping, served on tills. Managed stock, delivery and displays instore. Handled cash and card transactions. Adhered to licensing regulations and trained new staff.} \\
+\textsc{Jan 2015-Aug 2015} \textbf{Caterer}\\
+at \textsc{Smart Cuisine}, Aberdeen\\
+Serving customers, taking orders, organising and setting-up events/venues. Required high-standard of professionalism and customer service at corporate and private events.\\
+\textsc{Sep 2013 - May 2014} \textbf{Caterer}\\
+at \textsc{Splendid Catering}, Aberdeen\\
+Waiting tables, mixing and serving drinks, setting-up and dismantling equipment at venues for high-profile events.\\
+\end{multicols}
 \end{document}
